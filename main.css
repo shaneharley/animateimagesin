@@ -1,0 +1,33 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  font-weight:500;
+  margin:0;
+  padding:0;
+  background-color:lightgray;
+}
+#container {
+  margin: 0 auto;
+  width: 90vw;
+  height: 100vh;
+  padding: 40px;
+  overflow:hidden;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+  width: 100%; 
+}
+#wrapper .image {
+  background-color: white;
+  height: 30vh;
+  transition: all .7s ease-in-out;
+  border-radius: 4px;
+}
+
+#wrapper .image.hidden {
+  transform:translateY(100vh);
+}
+
